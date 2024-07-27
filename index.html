@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        <link rel="stylesheet" href="Style.css">
+        <script src="Interaction.js"></script>
+        <title>Encriptador de texto</title>
+    </head>
+    <body>
+        
+        <main>
+
+            <div id="logoAlura">
+                <img src="Imagenes/Logo.png" alt="Logo de Alura latam">
+            </div>
+            
+            <div id="wrapper_texto_encriptar">
+                <h2 id="Cabecera_encriptador" >Ingresa el texto a encriptar en la zona difuminada </h2>
+                <textarea name="Texto_Encriptar" id="encriptador" placeholder="Ingrese el texto Aqui" minlength="1" maxlength="500" ></textarea>
+            </div>
+
+            <div id="rectangulo"> 
+                <div id="container_muñeco_mensaje">
+                    <div id="muñeco">
+                        <img src="Imagenes/Muñeco.png" alt="Muñeco">
+                    </div>
+
+                    <div        id="mensaje_no_encontrado">
+                    
+                        <h1>Ningun mensaje fue encontrado</h1>
+                        <br>
+                        <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+            
+            <div id="texto_aclarativo">
+                <img src="Imagenes/bi_exclamation-circle-fill.png" alt="Signo de exclamacion">
+                <p id="texto_aclarativo_parrafo">
+                    No se admiten caracteres especiales ni numeros.
+                </p>
+            </div>
+           
+            <div id="botones">
+
+                <button id="encrip" onclick="encriptar()">Encriptar</button>
+
+                <button id="desencrip" onclick="desencriptar()">Desencriptar</button>
+
+                
+    </body>
+</html>
